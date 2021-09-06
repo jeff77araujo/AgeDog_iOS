@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AgeDogs" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_dog" translatesAutoresizingMaskIntoConstraints="NO" id="bbn-jp-LhD">
+                                <rect key="frame" x="20" y="64" width="374" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="5tf-za-bnR"/>
+                                    <constraint firstAttribute="width" priority="999" constant="375" id="e1f-eB-Wqq"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Digite a idade do seu cachorro, para descobrir a idade em anos humanos" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DG2-eu-zSb">
+                                <rect key="frame" x="20" y="334" width="374" height="48"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite a idade" textAlignment="center" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="1gb-nJ-AbF">
+                                <rect key="frame" x="40" y="422" width="160" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="NoA-wZ-rZb"/>
+                                </constraints>
+                                <color key="textColor" red="0.320291824" green="0.54622623790000002" blue="0.52574026740000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rN4-xu-Km6">
+                                <rect key="frame" x="214" y="422" width="160" height="34"/>
+                                <color key="backgroundColor" red="0.32029182395489036" green="0.54622623791472091" blue="0.52574026742851887" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="25W-nT-Zc6"/>
+                                    <constraint firstAttribute="height" constant="34" id="uRE-nD-l6f"/>
+                                </constraints>
+                                <state key="normal" title="DESCOBRIR">
+                                    <color key="titleColor" systemColor="systemBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonDiscoverAge:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1oU-ic-xf0"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A idade do seu cachorro em anos humanos é:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TYG-uT-sKS">
+                                <rect key="frame" x="40" y="476" width="334" height="50.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="14" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vSC-bT-45Y">
+                                <rect key="frame" x="100" y="556.5" width="214" height="85"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="70"/>
+                                <color key="textColor" systemColor="systemBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.320291824" green="0.54622623790000002" blue="0.52574026740000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <size key="shadowOffset" width="-4" height="1"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.61729222539999995" green="0.88648957009999996" blue="0.85883122680000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rN4-xu-Km6" secondAttribute="trailing" constant="40" id="2lk-cI-o7b"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vSC-bT-45Y" secondAttribute="trailing" constant="100" id="2mh-Jb-tmA"/>
+                            <constraint firstItem="bbn-jp-LhD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Fqa-b9-lCY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DG2-eu-zSb" secondAttribute="trailing" constant="20" id="H0S-js-DJ0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bbn-jp-LhD" secondAttribute="trailing" constant="20" id="QB3-z7-lgJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TYG-uT-sKS" secondAttribute="trailing" constant="40" id="Wd4-Yd-PYB"/>
+                            <constraint firstItem="1gb-nJ-AbF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="c4q-DV-ySr"/>
+                            <constraint firstItem="DG2-eu-zSb" firstAttribute="top" secondItem="bbn-jp-LhD" secondAttribute="bottom" constant="20" id="fuf-dt-vVl"/>
+                            <constraint firstItem="TYG-uT-sKS" firstAttribute="top" secondItem="1gb-nJ-AbF" secondAttribute="bottom" constant="20" id="geq-wG-qh5"/>
+                            <constraint firstItem="rN4-xu-Km6" firstAttribute="top" secondItem="1gb-nJ-AbF" secondAttribute="top" id="jAy-hT-A31"/>
+                            <constraint firstItem="1gb-nJ-AbF" firstAttribute="top" secondItem="DG2-eu-zSb" secondAttribute="bottom" constant="40" id="kcX-45-8xA"/>
+                            <constraint firstItem="TYG-uT-sKS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="pGU-CU-Onc"/>
+                            <constraint firstItem="DG2-eu-zSb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="tC6-B0-ECT"/>
+                            <constraint firstItem="bbn-jp-LhD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="uT4-SR-mVx"/>
+                            <constraint firstItem="vSC-bT-45Y" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="wdP-e0-wHo"/>
+                            <constraint firstItem="vSC-bT-45Y" firstAttribute="top" secondItem="TYG-uT-sKS" secondAttribute="bottom" constant="30" id="z9R-UC-DmQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="inputAge" destination="1gb-nJ-AbF" id="1PC-ih-Yd0"/>
+                        <outlet property="textAgeDog" destination="vSC-bT-45Y" id="qFa-m5-1yo"/>
+                        <outlet property="textMsg" destination="TYG-uT-sKS" id="7d2-8B-qqJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="125.89285714285714"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_dog" width="1209" height="805"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
